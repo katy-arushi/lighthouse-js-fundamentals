@@ -1,9 +1,9 @@
-function smartGarbage(trash, bins) {
+const smartGarbage = function(trash, bins) {
   if (trash === 'waste') {
-    bins.waste += 1
+    bins.waste += 1;
   } else if (trash === 'recycling') {
-    bins.recycling += 1
+    bins.recycling += 1;
   } else if (trash === 'compost')
-    bins.compost += 1
-  return bins  
-}
+    bins.compost += 1;
+  return bins;
+};

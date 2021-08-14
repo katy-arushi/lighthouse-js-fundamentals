@@ -1,14 +1,14 @@
-function instructorsName(data) {
-  let name = data[0].name
-  let nameIndex = 0
+const instructorsName = function(data) {
+  let name = data[0].name;
+  let nameIndex = 0;
   for (let i = 0; i < data.length; i++) {
     if (data[i].name.length > name.length) {
-      name = data[i].name.length
-      nameIndex = i
+      name = data[i].name.length;
+      nameIndex = i;
     }
   }
-  return data[nameIndex]
-}
+  return data[nameIndex];
+};
 
 
 console.log(instructorsName([

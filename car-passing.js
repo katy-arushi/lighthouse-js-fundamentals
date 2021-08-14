@@ -1,11 +1,11 @@
-function carPassing(cars, speed) {
+const carPassing = function(cars, speed) {
   let newCar = {
     time: Date.now(),
     speed: speed,
-  }
-  cars.push(newCar)
-  return cars
-}
+  };
+  cars.push(newCar);
+  return cars;
+};
 
 const cars = [
   {
@@ -20,8 +20,8 @@ const cars = [
     time: 1568331115463,
     speed: 35
   }
-]
+];
 
-const speed = 38
+const speed = 38;
 
-console.log(carPassing(cars, speed))
+console.log(carPassing(cars, speed));

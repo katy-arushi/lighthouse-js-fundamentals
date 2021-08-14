@@ -1,9 +1,9 @@
-function concat(list1, list2) {
+const concat = function(list1, list2) {
   for (let i = 0; i < list2.length; i++) {
-    list1.push(list2[i])
+    list1.push(list2[i]);
   }
-  return list1
-}
+  return list1;
+};
 
 console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
 console.log(concat([ 0, 3, 1 ], [ 9, 7, 2 ]), "=?", [ 0, 3, 1, 9, 7, 2 ]);

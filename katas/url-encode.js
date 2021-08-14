@@ -1,14 +1,14 @@
-function urlEncode(text) {
-  let textString2 = ""
-  let textString = ""
+const urlEncode = function(text) {
+  // let textString2 = ""
+  let textString = "";
   for (let i = 0; i < text.length; i++) {
     if (text[i] === " ") {
-      textString += '%20'
-    } else if (text[i] !== " "){
-      textString += text[i]
+      textString += '%20';
+    } else if (text[i] !== " ") {
+      textString += text[i];
     }
   }
-  return textString
+  return textString;
   // if (textString[0] === '%' && textString2[-1] === '%') {
   //   for (let i = 1; i < textString.length - 1; i++) {
   //     textString2 += textString[i]
@@ -23,7 +23,7 @@ function urlEncode(text) {
   // } else {
   //   return textString
   // }
-}
+};
 
 console.log(urlEncode("Lighthouse Labs"));
 console.log(urlEncode(" Lighthouse Labs "));
